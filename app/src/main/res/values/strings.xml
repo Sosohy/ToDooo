@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TODOOO</string>
+    <string name="button_ok">확인</string>
+    <string name="button_yes">예</string>
+    <string name="button_no">아니오</string>
+    <string name="alert_title_question"> </string>
+    <string name="alert_msg_delete">"%s"를 삭제하시겠습니까?</string>
+</resources>
+

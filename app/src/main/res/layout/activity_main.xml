@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="29dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="571dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/ed_input"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="7dp"
+                    android:fontFamily="@font/ubuntu_mono"
+                    android:hint="할 일을 추가하세요."
+                    android:selectAllOnFocus="false"
+                    android:singleLine="false"
+                    android:textSize="23sp" />
+
+                <ImageButton
+                    android:id="@+id/Bt_add"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignTop="@+id/ed_input"
+                    android:onClick="onBtnAddClick"
+                    app:srcCompat="@drawable/icon"
+                    tools:layout_editor_absoluteX="355dp"
+                    tools:layout_editor_absoluteY="0dp" />
+
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/lv_data"
+                android:layout_width="match_parent"
+                android:layout_height="518dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Start"
+                android:layout_width="202dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/ubuntu_mono"
+                android:onClick="onStart"
+                android:text="알림받기" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="202dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/ubuntu_mono"
+                android:onClick="onStop"
+                android:text="알림취소" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
